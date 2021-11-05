@@ -34,7 +34,7 @@ Options for `--model_type`: t5, bert2bert. Please refer to the `twt_preprocessin
 
 The pickled training, validation and test files will be generated in `data/cache`.
 
-### Train with validation
+### Train with Validation
 
 All training scripts are placed in the `tasks/train/tabfact` and `tasks/train/totto` folder.
 
@@ -52,7 +52,7 @@ bash tasks/train/random/totto/t5/base/totto_random_causal_t5_base.sh
 
 Note that you must run the scrip under the project root. By default the script loads the pickled files from `data/cache` and outputs the checkpoints along with evaluation results to the directory defined in the script.
 
-### Run prediction
+### Run Prediction
 
 You may find three prediction scrips in the `tasks/pred` folder.
 
@@ -89,7 +89,7 @@ If you have any question, please go ahead and [open an issue](https://github.com
     title = "TWT: Table with Written Text for Controlled Data-to-Text Generation",
     author = "Li, Tongliang and
       Fang, Lei and
-      Jian-Guang, LOU and
+      Jian-Guang, Lou and
       Li, Zhoujun",
     year = "2021"
 }
