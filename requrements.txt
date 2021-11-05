@@ -1,0 +1,19 @@
+# Recommended to install pytorch with Conda
+torch==1.6.0
+transformers==4.3.3
+datasets==1.0.2
+git-python==1.0.3
+sacrebleu==1.4.12
+rouge_score==0.0.4
+sentencepiece==0.1.95
+numpy==1.18.5
+pyahocorasick==1.4.2
+portion==2.0.2
+pyconst==2.0.0
+grpcio==1.26.0
+grpcio-tools==1.26.0
+Unidecode==1.2.0
+flask_cors==3.0.8
+tensorflow==2.3.0
+bleurt @ git+https://github.com/google-research/bleurt.git
+bert_score==0.3.9

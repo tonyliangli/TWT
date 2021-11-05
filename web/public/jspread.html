@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+</head>
+
+
+<body>
+    <div id='my-spreadsheet'></div>
+    <div style="margin-top: 10px;">
+        <button type="button" onclick="getData()">Get Data</button>
+    </div>
+    <script src="https://bossanova.uk/jspreadsheet/v4/jexcel.js"></script>
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+    <link rel="stylesheet" href="https://bossanova.uk/jspreadsheet/v4/jexcel.css" type="text/css" />
+    <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+    <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.layout.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Material+Icons" />
+    <script>
+        table = jspreadsheet(document.getElementById('my-spreadsheet'), {
+            minDimensions: [15, 15],
+            tableOverflow: true,
+            about: false,
+            allowComments: false,
+            allowRenameColumn: false,
+            columnSorting: false,
+            rowResize: true,
+            columnResize: true,
+            toolbar: [{
+                type: 'i',
+                content: 'undo',
+                onclick: function() {
+                    table.undo();
+                }
+            }, {
+                type: 'i',
+                content: 'redo',
+                onclick: function() {
+                    table.redo();
+                }
+            }, {
+                type: 'i',
+                content: 'save',
+                onclick: function() {
+                    table.download();
+                }
+            }],
+            onchange: function(instance, cell, x, y, value) {
+                var cellName = jexcel.getColumnNameFromId([x, y]);
+                console.log(cellName)
+                table.setStyle(cellName, 'background-color', '#EEE9F1');
+            }
+        });
+
+        function setMeta() {
+            var test1 = table.getData()
+            console.log(test1)
+        }
+
+        function getData() {
+            var test1 = table.getData()
+            console.log(test1)
+        }
+    </script>
+</body>
+
+</html>

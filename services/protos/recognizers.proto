@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service RecognizersText {
+  rpc GetRecognizeResult (TextRequest) returns (RecognizeResult) {}
+}
+
+message TextRequest {
+    string text = 1;
+    string cultureCode = 2;
+}
+  
+message RecognizeResult {
+    string result = 1;
+}
