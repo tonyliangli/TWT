@@ -15,7 +15,7 @@ Install Python dependency: `pip install -r requirements.txt`.
 
 ### Download the TWT dataset
 
-The TWT dataset can be downloaded from [here](#). Place it in the `data/dataset` folder.
+The TWT dataset can be downloaded from [here](https://drive.google.com/file/d/1U6JVytDIMwlxGiz--UqdCWt1LQAQ5aAR/view?usp=sharing). Place it in the `data/dataset` folder.
 Run the following commands:
 
 ```shell
