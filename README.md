@@ -11,7 +11,7 @@ Compared with other datasets, TWT is of practical use, the preﬁx controls the 
 ### Enviroment Setup
 
 The baseline codes use Python 3.7 and Pytorch 1.6.0.
-Install Python dependency: `pip install -r requirements.txt`
+Install Python dependency: `pip install -r requirements.txt`.
 
 ### Download the TWT dataset
 
