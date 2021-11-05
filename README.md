@@ -1,4 +1,4 @@
-# Adjective-Knowledge-for-Text-to-SQL
+# TWT: Table with Written Text for Controlled Data-to-Text Generation
 
 This is the source code for our paper [TWT: Table with Written Text for Controlled Data-to-Text Generation](https://underline.io/lecture/38303-twt-table-with-written-text-for-controlled-data-to-text-generation) (Findings of EMNLP 2021).
 
